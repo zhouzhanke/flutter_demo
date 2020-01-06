@@ -5,22 +5,17 @@ import 'package:flutter_app3/pages/page1.dart';
 import 'package:flutter_app3/pages/page2.dart';
 
 import 'dart:math';
-
-//import 'package:flutter_app3/l10n/locale.dart';
 import 'package:flutter_app3/l10n/localization_intl.dart';
 
 /// home page
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
 
-//  final String title;
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-//  Locale myLocale = Localizations.localeOf(context);
   int _counter = 0;
   double sideLength = 100;
   int _currentIndex = 0;
@@ -43,11 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _buildAppBar() {
     return AppBar(
-      // Here we take the value from the MyHomePage object that was created by
-      // the App.build method, and use it to set our appbar title.
       title: Text(AppLocalizations.of(context).title),
-//      title: Text('1'),
-//      title: Text(AppLocalizations.of(context).translate(title)),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.search),
@@ -61,9 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget _buildBody() {
     return Center(
       child: Column(
-        // center
         mainAxisAlignment: MainAxisAlignment.center,
-
         children: <Widget>[
           Container(
             width: double.infinity,
@@ -94,7 +83,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    // counter + 1
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: RaisedButton(
@@ -107,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: const EdgeInsets.all(8.0),
                       child: RaisedButton(
                         onPressed: _resetCounter,
-                        child: Text('Reset Counter'),
+                        child: Text('Reset'),
                       ),
                     ),
 
@@ -166,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text('IOS button'),
             pressedOpacity: .5,
             color: Colors.grey,
-//            padding: const EdgeInsets.all(10), // shrank to text size
+//            padding: const EdgeInsets.all(10), // shrink to text size
             onPressed: () {},
           ),
 //          CupertinoActivityIndicator(
@@ -220,10 +208,10 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: MyDrawer(),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('xxx')),
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('xxx')),
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('xxx')),
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('xxx')),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('home')),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('page 1')),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('page 2')),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('random')),
         ],
         currentIndex: _currentIndex,
         selectedItemColor: Colors.red,

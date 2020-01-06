@@ -4,10 +4,7 @@ import 'package:flutter_app3/pages/language_setting_page.dart';
 import 'package:flutter_app3/pages/page1.dart';
 import 'package:flutter_app3/pages/page2.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
-//import 'package:flutter_app3/l10n/locale.dart';
 import 'l10n/localization_intl.dart';
-
 
 // app entrance
 void main() {
@@ -26,8 +23,6 @@ class MyApp extends StatelessWidget {
           canvasColor: Colors.white,
           primaryColor: Colors.black,
           brightness: Brightness.light,
-
-          // text
           textTheme: TextTheme(
               body1: TextStyle(
             fontSize: 20,
@@ -37,8 +32,6 @@ class MyApp extends StatelessWidget {
 
       // localizations
       localizationsDelegates: [
-//        AppLocalizations.delegate,
-
         // built-in localization for basic text for material widgets
         GlobalMaterialLocalizations.delegate,
         // built-in localization for text direction LTR/RTL
@@ -46,7 +39,6 @@ class MyApp extends StatelessWidget {
         // built-in localization for basic text for IOS widgets
         GlobalCupertinoLocalizations.delegate,
 
-//        DemoLocalizationsDelegate.delegate,
         AppLocalizationsDelegate(),
       ],
 
@@ -57,16 +49,12 @@ class MyApp extends StatelessWidget {
       ],
       home: MyHomePage(),
 
-      // router page
       routes: {
-        'pageHome': (context) =>
-            MyHomePage(),
-//        MyHomePage(title: AppLocalizations.of(context).title),
+        'pageHome': (context) => MyHomePage(),
         '/page1': (context) => FirstPage(),
         '/page2': (context) => SecondPage(),
         '/language': (context) => LanguagePage(),
       },
-
       // initial route page
       initialRoute: 'pageHome',
     );

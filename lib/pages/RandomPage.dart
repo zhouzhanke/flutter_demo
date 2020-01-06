@@ -16,7 +16,6 @@ class _RandomPageState extends State<RandomPage> {
   Widget build(BuildContext context) {
 
     final TextEditingController controller1 = TextEditingController();
-//    controller1.addListener(listener);
 
     return MaterialApp(
       home: Scaffold(

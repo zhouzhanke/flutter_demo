@@ -47,7 +47,7 @@ class FirstPage extends StatelessWidget {
                             color: Colors.grey,
                             blurRadius: 10,
                             spreadRadius: 10,
-//                      offset: Offset(-1,1),
+//                            offset: Offset(-1,1),
                           )
                         ]
                     ),
