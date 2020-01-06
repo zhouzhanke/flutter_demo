@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-/// page 1
 class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

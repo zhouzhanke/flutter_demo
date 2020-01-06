@@ -7,7 +7,6 @@ import 'package:flutter_app3/pages/page2.dart';
 import 'package:flutter_app3/l10n/localization_intl.dart';
 import 'package:flutter_app3/pages/pageHome.dart';
 
-/// home page
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
 
@@ -19,8 +18,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   Widget _buildAppBar() {
+    var myLocale = AppLocalizations.of(context);
+
     return AppBar(
-      title: Text(AppLocalizations.of(context).title),
+      title: Text(myLocale.title),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.search),
@@ -30,16 +31,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ],
     );
   }
-
-
-//  Widget _buildFloatingButton() {
-//    return FloatingActionButton(
-//      onPressed: _incrementCounter,
-//      tooltip: 'Increment',
-//      backgroundColor: Colors.black,
-//      child: Icon(Icons.add),
-//    ); // This trailing comma makes auto-formatting nicer for build methods.
-//  }
 
   Widget _switch(index) {
     switch (index) {
@@ -69,7 +60,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
-//      body: _buildBody(),
       body: _switch(_currentIndex),
       drawer: MyDrawer(),
       bottomNavigationBar: BottomNavigationBar(
@@ -88,10 +78,6 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         },
       ),
-//      floatingActionButton: _buildFloatingButton(),
-      // This trailing comma makes auto-formatting nicer for build methods.
-      // centralize
-//      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
@@ -111,7 +97,7 @@ class MyDrawer extends StatelessWidget {
               child: FlutterLogo(),
             ),
             accountName: new Text('my name'),
-            accountEmail: new Text('my email@xxxxx.com'),
+            accountEmail: new Text('my email@email.com'),
             otherAccountsPictures: <Widget>[
               new Container(
                 child: FlutterLogo(),
@@ -132,15 +118,4 @@ class MyDrawer extends StatelessWidget {
       ),
     );
   }
-
-//  Widget _buildMenus() {
-//    return ListView(
-//      children: <Widget>[
-//        ListTile(
-//          title: Text('language setting'),
-////          onTap: () => Navigator.pushNamed(context, '/language'),
-//        )
-//      ],
-//    );
-//  }
 }

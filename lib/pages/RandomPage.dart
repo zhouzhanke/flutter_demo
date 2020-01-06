@@ -18,6 +18,8 @@ class _RandomPageState extends State<RandomPage> {
     final TextEditingController controller1 = TextEditingController();
 
     return MaterialApp(
+      // remove DEBUG tag
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SingleChildScrollView(
           child: ConstrainedBox(
