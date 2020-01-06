@@ -1,0 +1,14 @@
+{
+  "@@last_modified": "2020-01-06T09:53:13.809258",
+  "title": "demo en US",
+  "@title": {
+    "description": "The application title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "hello": "Hello US",
+  "@hello": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

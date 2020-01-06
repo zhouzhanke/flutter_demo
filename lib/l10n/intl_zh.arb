@@ -1,0 +1,14 @@
+{
+  "@@last_modified": "2020-01-06T09:15:44.843043",
+  "title": "demo zh CN",
+  "@title": {
+    "description": "The application title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "hello": "Hello CN",
+  "@hello": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
