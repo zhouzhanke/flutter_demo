@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app3/pages/home_page.dart';
+import 'package:flutter_app3/pages/Navigation.dart';
 import 'package:flutter_app3/pages/language_setting_page.dart';
 import 'package:flutter_app3/pages/page1.dart';
 import 'package:flutter_app3/pages/page2.dart';
