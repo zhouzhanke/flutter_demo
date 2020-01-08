@@ -22,6 +22,9 @@ dependencies:
   # localization
   intl: ^0.16.0
 #  easy_localization: ^1.3.1
+  # Import the provider package.
+  provider: ^3.1.0
+
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -38,6 +41,7 @@ dev_dependencies:
   json_serializable: ^2.0.0
   # localization
   intl_translation: ^0.17.2
+  pedantic: ^1.8.0
 
   flutter_test:
     sdk: flutter

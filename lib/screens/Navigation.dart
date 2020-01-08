@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app3/pages/RandomPage.dart';
-import 'package:flutter_app3/pages/page1.dart';
-import 'package:flutter_app3/pages/page2.dart';
+import 'package:flutter_app3/screens/cart.dart';
+import 'package:flutter_app3/screens/catalog.dart';
+import 'RandomPage.dart';
+import 'page1.dart';
+import 'page2.dart';
+import 'pageHome.dart';
 
 import 'package:flutter_app3/l10n/localization_intl.dart';
-import 'package:flutter_app3/pages/pageHome.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
@@ -50,6 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
         return RandomPage();
         break;
 
+      case 4:
+        return MyCatalog();
+        break;
+
+      case 5:
+        return MyCart();
+        break;
+
       default:
         return null;
         break;
@@ -68,6 +78,8 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('page 1')),
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('page 2')),
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('random')),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('catalog')),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('cart')),
         ],
         currentIndex: _currentIndex,
         selectedItemColor: Colors.red,

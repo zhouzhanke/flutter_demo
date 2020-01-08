@@ -58,6 +58,12 @@ class _HomePageState extends State<HomePage> {
                   style: Theme.of(context).textTheme.display1,
                   textAlign: TextAlign.center,
                 ),
+                Divider(
+                  height: 5,
+                  color: Colors.black,
+                  indent: 20,
+                  endIndent: 20,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
