@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-01-06T14:25:06.869523",
+  "@@last_modified": "2020-01-08T15:32:40.292003",
   "title": "demo",
   "@title": {
     "description": "The application title",
@@ -8,6 +8,16 @@
   },
   "hello": "Hello",
   "@hello": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "language setting",
+  "@language": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "auto": "Auto",
+  "@auto": {
     "type": "text",
     "placeholders": {}
   }

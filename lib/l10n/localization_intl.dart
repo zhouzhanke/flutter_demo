@@ -29,6 +29,13 @@ class AppLocalizations {
   String get hello {
     return Intl.message('Hello', name: 'hello');
   }
+
+  String get language {
+    return Intl.message('language setting', name: 'language');
+  }
+  String get auto {
+    return Intl.message('Auto', name: 'auto');
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

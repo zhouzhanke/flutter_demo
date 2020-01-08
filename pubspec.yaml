@@ -21,9 +21,11 @@ dependencies:
   json_annotation: ^2.0.0
   # localization
   intl: ^0.16.0
-#  easy_localization: ^1.3.1
+  #  easy_localization: ^1.3.1
   # Import the provider package.
   provider: ^3.1.0
+  # Wraps NSUserDefaults (on iOS) and SharedPreferences (on Android), providing a persistent store for simple data. Data is persisted to disk asynchronously. Neither platform can guarantee that writes will be persisted to disk after returning and this plugin must not be used for storing critical data.
+  shared_preferences: ^0.5.6
 
   flutter:
     sdk: flutter

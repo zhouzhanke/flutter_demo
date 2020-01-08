@@ -10,5 +10,15 @@
   "@hello": {
     "type": "text",
     "placeholders": {}
+  },
+  "language": "language setting",
+  "@language": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "auto": "Auto",
+  "@auto": {
+    "type": "text",
+    "placeholders": {}
   }
 }

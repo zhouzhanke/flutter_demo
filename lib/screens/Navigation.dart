@@ -126,6 +126,15 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushNamed(context, '/language');
             },
           ),
+          ListTile(
+            leading: new CircleAvatar(
+              child: Icon(Icons.color_lens),
+            ),
+            title: Text('Theme Setting'),
+            onTap: () {
+              Navigator.pushNamed(context, '/theme');
+            },
+          ),
         ],
       ),
     );
