@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:loading/indicator/ball_pulse_indicator.dart';
 import 'dart:math';
+
+import 'package:loading/loading.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -26,6 +29,7 @@ class _HomePageState extends State<HomePage> {
     });
     print('counter reset!');
   }
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -54,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   ' You have pushed the button this many times: '
-                      '\n$_counter',
+                  '\n$_counter',
                   style: Theme.of(context).textTheme.display1,
                   textAlign: TextAlign.center,
                 ),
@@ -139,12 +143,29 @@ class _HomePageState extends State<HomePage> {
             pressedOpacity: .5,
             color: Colors.grey,
 //            padding: const EdgeInsets.all(10), // shrink to text size
-            onPressed: () {},
+            onPressed: () {
+              return showDialog(
+                context: context,
+                barrierDismissible: false,
+                builder: (BuildContext context) {
+                  return GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).pop();
+                    },
+                    child: Container(
+                      child: Material(
+                        child:
+                          CupertinoActivityIndicator(
+                            radius: 30,
+                          ),
+//                        Loading(indicator: BallPulseIndicator(), size: 100.0,color: Colors.pink),
+                      ),
+                    ),
+                  );
+                },
+              );
+            },
           ),
-//          CupertinoActivityIndicator(
-//            radius: 30,
-//            animating: true,
-//          )
         ],
       ),
     );

@@ -26,6 +26,8 @@ dependencies:
   provider: ^3.1.0
   # Wraps NSUserDefaults (on iOS) and SharedPreferences (on Android), providing a persistent store for simple data. Data is persisted to disk asynchronously. Neither platform can guarantee that writes will be persisted to disk after returning and this plugin must not be used for storing critical data.
   shared_preferences: ^0.5.6
+  # A flutter widget of loading progress Indicator. Easy to use, easy to extend
+  loading: ^1.0.2
 
   flutter:
     sdk: flutter
