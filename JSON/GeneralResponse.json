@@ -1,0 +1,45 @@
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "list": [
+      {
+        "TRUCK_NO": "豫A56903",
+        "APPLY_NO": "UD2014042910002"
+      },
+      {
+        "TRUCK_NO": "豫AR3718",
+        "APPLY_NO": "UD2014042910001"
+      },
+      {
+        "TRUCK_NO": "豫AF3908",
+        "APPLY_NO": "UD2014042810009"
+      },
+      {
+        "TRUCK_NO": "豫AG5662",
+        "APPLY_NO": "UD2014042810008"
+      },
+      {
+        "TRUCK_NO": "豫AG5679",
+        "APPLY_NO": "UD2014042810007"
+      },
+      {
+        "TRUCK_NO": "豫AG5656",
+        "APPLY_NO": "UD2014042810006"
+      },
+      {
+        "TRUCK_NO": "豫AC8589",
+        "APPLY_NO": "UD2014042810005"
+      },
+      {
+        "TRUCK_NO": "豫AF3938",
+        "APPLY_NO": "UD2014042810004"
+      },
+      {
+        "TRUCK_NO": "豫AN8083",
+        "APPLY_NO": "UD2014042810003"
+      }
+    ]
+  },
+  "count": 9
+}
